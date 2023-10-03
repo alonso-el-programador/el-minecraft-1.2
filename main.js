@@ -43,17 +43,17 @@ function minecraft(e){
 
     keyPressed=e.keyCode;
     console.log(keyPressed);
-    if(e.shiftKey == true && keyPressed == '80')
+    if(e.shiftKey == true && keyPressed == '107')
 {
-	console.log("Se presiona p y shift al mismo tiempo");
+	console.log("Se presiona + y shift al mismo tiempo");
 	block_image_width = block_image_width + 10;
 	block_image_height = block_image_height + 10;
 	document.getElementById("current_width").innerHTML = block_image_width;
 	document.getElementById("current_height").innerHTML = block_image_height;	
 }
-if(e.shiftKey && keyPressed == '77')
+if(e.shiftKey && keyPressed == '109')
 {
-	console.log("Se presiona m y shift al mismo tiempo");
+	console.log("Se presiona - y shift al mismo tiempo");
 	block_image_width = block_image_width - 10;
 	block_image_height = block_image_height - 10;
 	document.getElementById("current_width").innerHTML = block_image_width;
@@ -95,7 +95,9 @@ if(keyPressed=="90"){
 if(keyPressed=="88"){
     new_image("yellow_wall.png")
 }
+
 }
+
 
 function arriba()
 {
